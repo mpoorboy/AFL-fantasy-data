@@ -18,4 +18,13 @@ class AflItem(scrapy.Item):
     own = scrapy.Field()
     games = scrapy.Field()
     be = scrapy.Field()
+    round_1 = scrapy.Field()
+    round_2 = scrapy.Field()
+    round_3 = scrapy.Field()
+    round_4 = scrapy.Field()
+    round_5 = scrapy.Field()
+    round_6 = scrapy.Field()
+    round_7 = scrapy.Field()
+    #round_8 = scrapy.Field()
+    #round_9 = scrapy.Field()
     #pass
