@@ -1,4 +1,8 @@
 player,position,start_price,current_price,own,games,be,round_1,round_2,round_3,round_4,round_5,round_6,round_7
+<<<<<<< HEAD
+=======
+,,,,,,,,,,,,,
+>>>>>>> 16f482e9eeaecd003351c1541bcaa59da1e5c3f5
 R Atkins,Mid,572000,583000,1.2,7,96,50,71,100,103,85,100,66
 L Brown,Def,412000,495000,0.5,7,79,46,90,99,59,69,100,55
 P Dangerfield,Mid,849000,718000,18.8,6,133,,118,102,97,109,70,109
