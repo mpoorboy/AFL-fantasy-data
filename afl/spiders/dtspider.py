@@ -26,7 +26,7 @@ class dtspider(scrapy.Spider):
             item['round_5'] = row.xpath('td[18]//text()').extract_first()
             item['round_6'] = row.xpath('td[19]//text()').extract_first()
             item['round_7'] = row.xpath('td[20]//text()').extract_first()
-            #item['round_8'] = row.xpath('td[21]//text()').extract_first()
+            item['round_8'] = row.xpath('td[21]//text()').extract_first()
             #item['round_9'] = row.xpath('td[22]//text()').extract_first()
             #player_id += 1
             yield item
