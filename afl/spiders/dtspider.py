@@ -8,10 +8,8 @@ class dtspider(scrapy.Spider):
 
     def parse(self, response):
         rows = response.xpath('//table[@class="tablesorter"]//tr')
-        #player_id = 1
         for row in rows[1:]:
             item = AflItem()
-            #item['player_id'] = [player_id]
             item['player'] = row.xpath('td[2]//text()').extract_first()
             item['position'] = row.xpath('td[3]/text()').extract_first()
             item['start_price'] = row.xpath('td[4]/text()').extract_first()
@@ -27,8 +25,8 @@ class dtspider(scrapy.Spider):
             item['round_6'] = row.xpath('td[19]//text()').extract_first()
             item['round_7'] = row.xpath('td[20]//text()').extract_first()
             item['round_8'] = row.xpath('td[21]//text()').extract_first()
-            #item['round_9'] = row.xpath('td[22]//text()').extract_first()
-            #player_id += 1
+            item['round_9'] = row.xpath('td[22]//text()').extract_first()
+            #item['round_10'] = row.xpath('td[23]//text()').extract_first()
             yield item
 
 # no pipelines:scrapy crawl dt -o dt.csv
