@@ -29,7 +29,8 @@ class dtspider(scrapy.Spider):
             item['round_10'] = row.xpath('td[23]//text()').extract_first()
             item['round_11'] = row.xpath('td[24]//text()').extract_first()
             item['round_12'] = row.xpath('td[25]//text()').extract_first()
-            #item['round_13'] = row.xpath('td[26]//text()').extract_first()
+            item['round_13'] = row.xpath('td[26]//text()').extract_first()
+            #item['round_14'] = row.xpath('td[27]//text()').extract_first()
             yield item
 
 # no pipelines:scrapy crawl dt -o dt.csv
