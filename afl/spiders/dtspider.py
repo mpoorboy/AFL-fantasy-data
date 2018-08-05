@@ -36,7 +36,7 @@ class dtspider(scrapy.Spider):
             item['round_17'] = row.xpath('td[30]//text()').extract_first()
             item['round_18'] = row.xpath('td[31]//text()').extract_first()
             item['round_19'] = row.xpath('td[32]//text()').extract_first()
-            #item['round_20'] = row.xpath('td[33]//text()').extract_first()
+            item['round_20'] = row.xpath('td[33]//text()').extract_first()
             #item['round_21'] = row.xpath('td[34]//text()').extract_first()
             #item['round_22'] = row.xpath('td[35]//text()').extract_first()
             #item['round_23'] = row.xpath('td[36]//text()').extract_first()

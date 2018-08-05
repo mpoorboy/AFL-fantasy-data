@@ -1,0 +1,157 @@
+{
+  "id": "mpoorboy/afl_fantasy_data_2018",
+  "id_no": 39856,
+  "title": "AFL Fantasy Data 2018",
+  "subtitle": "YTD Scores by Round, Current BE, Ownership, and Prices",
+  "description": "",
+  "keywords": [
+    "small"
+  ],
+  "resources": [
+    {
+      "path": "/Users/admin/working/afl/kaggle/afl_fantasy_data_2018/.DS_Store",
+      "description": "",
+      "schema": {
+        "fields": []
+      }
+    },
+    {
+      "path": "/Users/admin/working/afl/kaggle/afl_fantasy_data_2018/dt.csv",
+      "description": "Round-by-Round Scores for all Players; Scraped Weekly from [dtlive's AFL Data View][1].\n\n\n  [1]: http://dtlive.com.au/afl/dataview.php",
+      "schema": {
+        "fields": [
+          {
+            "name": "player",
+            "title": "Player",
+            "type": "String"
+          },
+          {
+            "name": "position",
+            "title": "Position(s)",
+            "type": "String"
+          },
+          {
+            "name": "start_price",
+            "title": "Start Price",
+            "type": "Numeric"
+          },
+          {
+            "name": "current_price",
+            "title": "Current Price",
+            "type": "Numeric"
+          },
+          {
+            "name": "own",
+            "title": "% Owned",
+            "type": "Numeric"
+          },
+          {
+            "name": "games",
+            "title": "Games Played",
+            "type": "Integer"
+          },
+          {
+            "name": "be",
+            "title": "Break Even",
+            "type": "Integer"
+          },
+          {
+            "name": "round_1",
+            "title": "Rd1",
+            "type": "Integer"
+          },
+          {
+            "name": "round_2",
+            "title": "Rd2",
+            "type": "Integer"
+          },
+          {
+            "name": "round_3",
+            "title": "Rd3",
+            "type": "Integer"
+          },
+          {
+            "name": "round_4",
+            "title": "Rd4",
+            "type": "Integer"
+          },
+          {
+            "name": "round_5",
+            "title": "Rd5",
+            "type": "Integer"
+          },
+          {
+            "name": "round_6",
+            "title": "Rd6",
+            "type": "Integer"
+          },
+          {
+            "name": "round_7",
+            "title": "Rd7",
+            "type": "Integer"
+          },
+          {
+            "name": "round_8",
+            "title": "Rd8",
+            "type": "Integer"
+          },
+          {
+            "name": "round_9",
+            "title": "Rd9",
+            "type": "Integer"
+          },
+          {
+            "name": "round_10",
+            "title": "Rd10",
+            "type": "Integer"
+          },
+          {
+            "name": "round_11",
+            "title": "Rd11",
+            "type": "Integer"
+          },
+          {
+            "name": "round_12",
+            "title": "Rd12",
+            "type": "Integer"
+          },
+          {
+            "name": "round_13",
+            "title": "Rd13",
+            "type": "Integer"
+          },
+          {
+            "name": "round_14",
+            "title": "Rd14",
+            "type": "Integer"
+          },
+          {
+            "name": "round_15",
+            "title": "Rd15",
+            "type": "Integer"
+          },
+          {
+            "name": "round_16",
+            "title": "Rd16",
+            "type": "Integer"
+          },
+          {
+            "name": "round_17",
+            "title": "Rd17",
+            "type": "Integer"
+          },
+          {
+            "name": "round_18",
+            "title": "Rd18",
+            "type": "Integer"
+          },
+          {
+            "name": "round_19",
+            "title": "Rd19",
+            "type": "Integer"
+          }
+        ]
+      }
+    }
+  ]
+}

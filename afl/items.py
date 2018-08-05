@@ -37,7 +37,7 @@ class AflItem(scrapy.Item):
     round_17 = scrapy.Field()
     round_18 = scrapy.Field()
     round_19 = scrapy.Field()
-    #round_20 = scrapy.Field()
+    round_20 = scrapy.Field()
     #round_21 = scrapy.Field()
     #round_22 = scrapy.Field()
     #round_23 = scrapy.Field()
