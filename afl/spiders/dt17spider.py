@@ -2,9 +2,9 @@ import scrapy
 from afl.items import AflItem
 
 class dtspider(scrapy.Spider):
-    name = "dt"
+    name = "dt17"
     allowed_domains = ["dtlive.com.au"]
-    start_urls = ["http://dtlive.com.au/afl/dataview.php"]
+    start_urls = ["http://dtlive.com.au/afl/dataview.php?SeasonID=10"]
 
     def parse(self, response):
         rows = response.xpath('//table[@class="tablesorter"]//tr')
@@ -38,9 +38,9 @@ class dtspider(scrapy.Spider):
             item['round_19'] = row.xpath('td[32]//text()').extract_first()
             item['round_20'] = row.xpath('td[33]//text()').extract_first()
             item['round_21'] = row.xpath('td[34]//text()').extract_first()
-            #item['round_22'] = row.xpath('td[35]//text()').extract_first()
-            #item['round_23'] = row.xpath('td[36]//text()').extract_first()
+            item['round_22'] = row.xpath('td[35]//text()').extract_first()
+            item['round_23'] = row.xpath('td[36]//text()').extract_first()
             yield item
 
-# no pipelines:scrapy crawl dt -o dt.csv
-# with CSVExtractor pipeline: scrapy crawl dt
+# no pipelines:scrapy crawl dt -o dt17.csv
+# with CSVExtractor pipeline: scrapy crawl dt17
